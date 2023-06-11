@@ -27,8 +27,9 @@ public class SeleniumDemo {
     }
 
     @Test(priority = 1)
-    public void navigateToHomePage(){
+    public void navigateToHomePage() throws InterruptedException {
         driver.navigate().to("https://www.amazon.in");
+        Thread.sleep(5000);
     }
 
     @Test(priority = 2)
