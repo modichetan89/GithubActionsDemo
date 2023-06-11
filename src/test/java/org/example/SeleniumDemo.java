@@ -18,9 +18,9 @@ public class SeleniumDemo {
     public void setUp(){
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--no-sandbox");
-        chromeOptions.addArguments("--disable-dev-shm-usage");
-        chromeOptions.addArguments("--headless");
+//        chromeOptions.addArguments("--no-sandbox");
+//        chromeOptions.addArguments("--disable-dev-shm-usage");
+//        chromeOptions.addArguments("--headless");
         driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
