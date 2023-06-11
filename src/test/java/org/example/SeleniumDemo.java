@@ -24,6 +24,7 @@ public class SeleniumDemo {
         driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        //test
     }
 
     @Test(priority = 1)
